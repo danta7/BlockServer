@@ -1,3 +1,23 @@
 system:
   ip:
   port: 8080
+  env: dev
+log:
+  app: BlockServer
+  dir: logs
+db:
+  user: root
+  password: Dt1052323212.
+  host: 192.168.5.129
+  port: 3306
+  db: blogx
+  debug: false
+  source: mysql
+db1:
+  user: root
+  password: Dt1052323212.
+  host: 192.168.5.129
+  port: 3306
+  db: blogx
+  debug: false
+  source: mysql

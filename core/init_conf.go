@@ -1,31 +1,24 @@
 package core
 
 import (
+	"BlockServer/conf"
+	"BlockServer/flags"
 	"fmt"
 	"gopkg.in/yaml.v2"
 	"os"
 )
 
-var confPath = "settings.yaml"
-
-type System struct {
-	Ip   string `yaml:"ip"`
-	Port int    `yaml:"port"`
-}
-
-type Config struct {
-	System System `yaml:"system"`
-}
-
-func ReadConf() {
-	byteData, err := os.ReadFile(confPath)
+func ReadConf() (c *conf.Config) {
+	byteData, err := os.ReadFile(flags.FlagOptions.File)
 	if err != nil {
 		panic(err)
 	}
-	var config Config
-	err = yaml.Unmarshal(byteData, &config)
+	c = new(conf.Config)
+	err = yaml.Unmarshal(byteData, c)
 	if err != nil {
 		panic(fmt.Sprintf("yaml 配置文件格式错误:%v", err))
 	}
-	fmt.Println(config)
+
+	fmt.Printf("读取配置文件 %s 成功\n ", flags.FlagOptions.File)
+	return
 }

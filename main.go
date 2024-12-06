@@ -1,7 +1,14 @@
 package main
 
-import "BlockServer/core"
+import (
+	"BlockServer/core"
+	"BlockServer/flags"
+	"BlockServer/global"
+)
 
 func main() {
-	core.ReadConf()
+	flags.Parse()
+	global.Config = core.ReadConf()
+	core.InitLogrus()
+	global.DB = core.InitDB()
 }
