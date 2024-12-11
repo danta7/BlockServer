@@ -1,8 +1,8 @@
 package core
 
 import (
-	"BlockServer/conf"
-	"BlockServer/flags"
+	"BlogServer/conf"
+	"BlogServer/flags"
 	"fmt"
 	"gopkg.in/yaml.v2"
 	"os"

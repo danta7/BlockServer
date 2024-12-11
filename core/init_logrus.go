@@ -1,7 +1,7 @@
 package core
 
 import (
-	"BlockServer/global"
+	"BlogServer/global"
 	"bytes"
 	"fmt"
 	"github.com/sirupsen/logrus"

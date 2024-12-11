@@ -1,7 +1,7 @@
 package global
 
 import (
-	"BlockServer/conf"
+	"BlogServer/conf"
 	"gorm.io/gorm"
 )
 
