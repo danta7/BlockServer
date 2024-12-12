@@ -1,0 +1,14 @@
+[2024-12-12 10:44:18] [36m[info][0m init_db.go:28 BlogServer/core.InitDB 数据库连接成功
+[2024-12-12 10:44:18] [36m[info][0m flag_db.go:33 BlogServer/flags.flagDB 数据库迁移成功！
+[2024-12-12 10:48:49] [36m[info][0m init_db.go:28 BlogServer/core.InitDB 数据库连接成功
+[2024-12-12 10:51:49] [36m[info][0m init_db.go:28 BlogServer/core.InitDB 数据库连接成功
+[2024-12-12 10:51:49] [36m[info][0m flag_db.go:33 BlogServer/flags.flagDB 数据库迁移成功！
+[2024-12-12 10:51:53] [36m[info][0m init_db.go:28 BlogServer/core.InitDB 数据库连接成功
+[2024-12-12 10:53:51] [36m[info][0m init_db.go:28 BlogServer/core.InitDB 数据库连接成功
+[2024-12-12 10:54:50] [36m[info][0m init_db.go:28 BlogServer/core.InitDB 数据库连接成功
+[2024-12-12 10:58:02] [36m[info][0m init_db.go:28 BlogServer/core.InitDB 数据库连接成功
+[2024-12-12 11:01:21] [36m[info][0m init_db.go:28 BlogServer/core.InitDB 数据库连接成功
+[2024-12-12 11:06:26] [36m[info][0m init_db.go:28 BlogServer/core.InitDB 数据库连接成功
+[2024-12-12 11:13:30] [36m[info][0m init_db.go:28 BlogServer/core.InitDB 数据库连接成功
+[2024-12-12 11:14:46] [36m[info][0m init_db.go:28 BlogServer/core.InitDB 数据库连接成功
+[2024-12-12 11:29:28] [36m[info][0m init_db.go:28 BlogServer/core.InitDB 数据库连接成功
