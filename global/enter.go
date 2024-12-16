@@ -6,6 +6,6 @@ import (
 )
 
 var (
-	Config *conf.Config
-	DB     *gorm.DB
+	Config *conf.Config // 全局配置文件
+	DB     *gorm.DB     // 数据库
 )

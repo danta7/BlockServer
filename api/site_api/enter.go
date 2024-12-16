@@ -15,7 +15,6 @@ func (SiteApi) SiteInfoView(c *gin.Context) {
 
 type SiteUpdateRequest struct {
 	Name string `json:"name" binding:"required"`
-	Age  int    `json:"age" binding:"required" label:"年龄"`
 }
 
 func (SiteApi) SiteUpdateView(c *gin.Context) {
@@ -29,19 +28,19 @@ func (SiteApi) SiteUpdateView(c *gin.Context) {
 	//log.SetImage("/xxx/xxx")
 	//log.SetLink("gin链接", "https://gin-gonic.com/zh-cn/")
 	//c.Header("xxx", "xxxxe")
-	//
+
 	var cr SiteUpdateRequest
 	err := c.ShouldBindJSON(&cr)
 	if err != nil {
 		res.FailWithError(err, c)
 		return
 	}
-	//
+
 	//log.SetItemInfo("结构体", cr)
 	//log.SetItemInfo("切片", []string{"a", "b"})
 	//log.SetItemInfo("字符串", "你好")
 	//log.SetItemInfo("数字", 123)
-	//
+
 	//id := log.Save()
 	//fmt.Println(1, id)
 	//id = log.Save()

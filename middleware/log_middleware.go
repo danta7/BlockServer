@@ -6,23 +6,24 @@ import (
 	"net/http"
 )
 
-// ResponseWriter 响应体读取 自己定义方法，增强write方法，通过中间变量存响应体
+// ResponseWriter 增强Gin的ResponseWriter,增加Body和Head字段，用于捕获响应体和响应头
 type ResponseWriter struct {
 	gin.ResponseWriter
-	Body []byte
-	Head http.Header
+	Body []byte      // 存储响应体
+	Head http.Header // 存储响应头
 }
 
 func (w *ResponseWriter) Write(data []byte) (int, error) {
-	w.Body = append(w.Body, data...)
-	return w.ResponseWriter.Write(data)
+	w.Body = append(w.Body, data...)    // 将响应体数据追加到Body中
+	return w.ResponseWriter.Write(data) // 再调用 gin.ResponseWriter 的Write方法
 }
 
 func (w *ResponseWriter) Header() http.Header {
-	return w.Head
+	return w.Head // 返回调用的响应头
 }
 
 func LogMiddleWare(c *gin.Context) {
+
 	log := log_service.NewActionLogByGin(c)
 	// 请求中间件
 	log.SetRequest(c)
@@ -33,7 +34,8 @@ func LogMiddleWare(c *gin.Context) {
 		ResponseWriter: c.Writer,
 		Head:           make(http.Header),
 	}
-	c.Writer = res
+
+	c.Writer = res // 将gin默认的c.writer替换为自己创建的res，所有通过 c.Writer 写入的响应数据都将首先进入到自定义的 ResponseWriter 中
 	c.Next()
 	// 响应中间件
 	log.SetResponse(res.Body)

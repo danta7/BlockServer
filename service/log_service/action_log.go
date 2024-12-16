@@ -113,7 +113,7 @@ func (ac *ActionLog) SetRequest(c *gin.Context) {
 		logrus.Errorf(err.Error())
 	}
 	ac.requestBody = byteData
-	c.Request.Body = io.NopCloser(bytes.NewBuffer(byteData)) // 回填回去
+	c.Request.Body = io.NopCloser(bytes.NewBuffer(byteData)) // 恢复请求体内容
 }
 
 // SetResponse 获取响应体
@@ -206,7 +206,7 @@ func (ac *ActionLog) Save() (id uint) {
 
 	ip := ac.c.ClientIP()
 	addr := core.GetIPAddr(ip)
-	userID := uint(1)
+	userID := uint(1) // 初步设置为1
 	log := models.LogModel{
 		LogType: enum.ActionLogType,
 		Title:   ac.title,
