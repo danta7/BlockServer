@@ -3,8 +3,11 @@ package log_api
 import (
 	"BlogServer/comment"
 	"BlogServer/comment/res"
+	"BlogServer/global"
 	"BlogServer/models"
 	"BlogServer/models/enum"
+	"BlogServer/service/log_service"
+	"fmt"
 	"github.com/gin-gonic/gin"
 )
 
@@ -46,7 +49,7 @@ func (LogApi) LogListView(c *gin.Context) {
 		PageInfo:     cr.PageInfo,
 		Likes:        []string{"title"},
 		Preloads:     []string{"UserModel"},
-		Debug:        true,
+		Debug:        false,
 		DefaultOrder: "created_at desc",
 	})
 
@@ -61,4 +64,47 @@ func (LogApi) LogListView(c *gin.Context) {
 
 	res.OkWithList(_list, int(count), c)
 	return
+}
+
+func (LogApi) LogReadView(c *gin.Context) {
+	// 日志读取
+	var cr models.IDRequest
+	err := c.ShouldBindUri(&cr)
+	if err != nil {
+		res.FailWithError(err, c)
+		return
+	}
+	var log models.LogModel
+	err = global.DB.Take(&log, cr.ID).Error
+	if err != nil {
+		res.FailWithMsg("不存在的日志", c)
+		return
+	}
+	if !log.IsRead {
+		global.DB.Model(&log).Update("is_read", true)
+	}
+
+	res.OkWithMsg("日志读取成功", c)
+}
+
+func (LogApi) LogRemoveView(c *gin.Context) {
+	var cr models.RemoveRequest
+	err := c.ShouldBindJSON(&cr)
+	if err != nil {
+		res.FailWithError(err, c)
+		return
+	}
+
+	log := log_service.GetLog(c)
+	log.ShowRequest()
+	log.ShowResponse()
+
+	var logList []models.LogModel
+	global.DB.Find(&logList, "id in ?", cr.IDList)
+
+	if len(logList) > 0 {
+		global.DB.Delete(&logList)
+	}
+	msg := fmt.Sprintf("日志删除成功，共删除%d条", len(logList))
+	res.OkWithMsg(msg, c)
 }

@@ -1,0 +1,5 @@
+[2024-12-17 16:31:11] [36m[info][0m init_db.go:28 BlogServer/core.InitDB 数据库连接成功
+[2024-12-17 16:36:09] [36m[info][0m init_db.go:28 BlogServer/core.InitDB 数据库连接成功
+[2024-12-17 16:52:14] [36m[info][0m init_db.go:28 BlogServer/core.InitDB 数据库连接成功
+[2024-12-17 16:54:08] [36m[info][0m init_db.go:28 BlogServer/core.InitDB 数据库连接成功
+[2024-12-17 16:55:22] [36m[info][0m init_db.go:28 BlogServer/core.InitDB 数据库连接成功
