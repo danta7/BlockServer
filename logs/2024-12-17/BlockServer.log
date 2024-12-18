@@ -3,3 +3,13 @@
 [2024-12-17 16:52:14] [36m[info][0m init_db.go:28 BlogServer/core.InitDB 数据库连接成功
 [2024-12-17 16:54:08] [36m[info][0m init_db.go:28 BlogServer/core.InitDB 数据库连接成功
 [2024-12-17 16:55:22] [36m[info][0m init_db.go:28 BlogServer/core.InitDB 数据库连接成功
+[2024-12-17 19:36:39] [36m[info][0m init_db.go:28 BlogServer/core.InitDB 数据库连接成功
+[2024-12-17 19:36:44] [31m[fatal][0m init_redis.go:19 BlogServer/core.InitRedis redis connect failed:dial tcp 196.168.5.123:6379: i/o timeout
+[2024-12-17 19:37:07] [36m[info][0m init_db.go:28 BlogServer/core.InitDB 数据库连接成功
+[2024-12-17 19:37:12] [31m[fatal][0m init_redis.go:19 BlogServer/core.InitRedis redis connect failed:dial tcp 196.168.5.129:6379: i/o timeout
+[2024-12-17 19:37:26] [36m[info][0m init_db.go:28 BlogServer/core.InitDB 数据库连接成功
+[2024-12-17 19:37:26] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis connected
+[2024-12-17 19:50:45] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2024-12-17 19:58:28] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2024-12-17 20:01:02] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2024-12-17 20:05:29] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功

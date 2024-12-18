@@ -6,6 +6,14 @@ system:
 log:
   app: BlockServer
   dir: logs
+jwt:
+  expire: 3   # 过期时间
+  secret: xxx   # 密钥
+  issuer: danta
+redis:
+  addr: 192.168.5.129:6379
+  password:
+  db: 1
 db:
   user: root
   password: Dt1052323212.

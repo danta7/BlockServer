@@ -13,6 +13,7 @@ func main() {
 	global.Config = core.ReadConf()
 	core.InitLogrus()         // 初始化记录日志
 	global.DB = core.InitDB() // 初始化数据库 包括读写分类等
+	global.Redis = core.InitRedis()
 
 	flags.Run()
 
