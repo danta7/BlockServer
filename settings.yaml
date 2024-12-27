@@ -1,19 +1,11 @@
 system:
-  ip:
+  ip: ""
   port: 8080
-  env: dev
   gin_mode: debug
+  env: dev
 log:
   app: BlockServer
   dir: logs
-jwt:
-  expire: 3   # 过期时间
-  secret: xxx   # 密钥
-  issuer: danta
-redis:
-  addr: 192.168.5.129:6379
-  password:
-  db: 1
 db:
   user: root
   password: Dt1052323212.
@@ -30,3 +22,66 @@ db1:
   db: blogx
   debug: false
   source: mysql
+jwt:
+  expire: 3
+  secret: xxx
+  issuer: danta
+redis:
+  addr: 192.168.5.129:6379
+  password: ""
+  db: 1
+site:
+  siteInfo:
+    title: danta博客1
+    logo: ""
+    beian: ""
+    mode: 1
+  project:
+    title: 蛋挞
+    icon: /yyy.png
+    webPath: uploads/index.html
+  seo:
+    keywords: 蛋挞
+    description: 蛋挞好吃
+  about:
+    siteDate: ""
+    qq: ""
+    wechat: ""
+    gitee: ""
+    bilibili: ""
+    github: ""
+  login:
+    qqLogin: false
+    usernamePwdLogin: false
+    emailLogin: false
+    captcha: false
+  indexRight:
+    list: []
+  article:
+    noExamine: true
+email:
+  domain: ""
+  port: 0
+  sendEmail: ""
+  authCode: ""
+  sendNickname: ""
+  ssl: false
+  tls: false
+qq:
+  appID: "123456789"
+  appKey: ""
+  redirect: http://xxxxxxxx
+qiNiu:
+  enable: false
+  accessKey: ""
+  secretKey: ""
+  bucket: ""
+  uri: ""
+  region: ""
+  prefix: ""
+  size: 0
+ai:
+  enable: false
+  secretKey: njNJSDNKGNKSDNdmgsdoggs
+  nickname: 蛋挞
+  avatar: /xxx/xx

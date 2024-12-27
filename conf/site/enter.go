@@ -1,10 +1,10 @@
 package site
 
 type SiteInfo struct {
-	Title string `json:"title" yaml:"title"` // 网站的标题
-	Logo  string `json:"logo" yaml:"logo"`   // 网站的logo
-	Beian string `json:"beian" yaml:"beian"` // 网站的编号
-	Mode  int8   `json:"mode" yaml:"mode"`   // 网站的运行模式 1 社区模式 2 博客模式
+	Title string `json:"title" yaml:"title"`                   // 网站的标题
+	Logo  string `json:"logo" yaml:"logo"`                     // 网站的logo
+	Beian string `json:"beian" yaml:"beian"`                   // 网站的编号
+	Mode  int8   `json:"mode" yaml:"mode" binding:"oneof=1 2"` // 网站的运行模式 1 社区模式 2 博客模式
 
 }
 
@@ -22,7 +22,8 @@ type Seo struct {
 type About struct {
 	SiteDate string `json:"siteDate" yaml:"siteDate"` // 建站时间 年月日
 	QQ       string `json:"QQ" yaml:"qq"`             // qq 二维码
-	Wechat   string `json:"wechat" yaml:"wechat"`     // 微信二维码
+	Version  string `json:"version" yaml:"-"`
+	Wechat   string `json:"wechat" yaml:"wechat"` // 微信二维码
 	Gitee    string `json:"gitee" yaml:"gitee"`
 	Bilibili string `json:"bilibili" yaml:"bilibili"`
 	Github   string `json:"github" yaml:"github"`
