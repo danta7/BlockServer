@@ -14,3 +14,16 @@
 [2024-12-31 16:18:08] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
 [2024-12-31 16:25:26] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
 [2024-12-31 16:25:26] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2024-12-31 16:52:26] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2024-12-31 16:52:26] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2024-12-31 17:00:49] [36m[info][0m image_upload.go:50 BlogServer/api/image_api.ImageApi.ImageUploadView 上传图片重复 2331131388 董韬.jpg <==> 2331131388 董韬.jpg 49edb1aaba44ba93fe01f5a3d50765ee
+[2024-12-31 17:12:53] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2024-12-31 17:12:53] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2024-12-31 17:18:13] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2024-12-31 17:18:13] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2024-12-31 17:21:14] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2024-12-31 17:21:14] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2024-12-31 17:21:37] [31m[error][0m image_model.go:27 BlogServer/models.ImageModel.BeforeDelete 删除文件失败 remove uploads/images01/7fd41aa0d82d1092632bf0151154e0c5.jpg: The system cannot find the file specified.
+[2024-12-31 17:22:47] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2024-12-31 17:22:47] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2024-12-31 17:22:57] [33m[warning][0m image_model.go:27 BlogServer/models.ImageModel.BeforeDelete 删除文件失败 remove uploads/images01/7fd41aa0d82d1092632bf0151154e0c5.jpg: The system cannot find the file specified.

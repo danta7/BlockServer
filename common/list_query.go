@@ -1,4 +1,4 @@
-package comment
+package common
 
 import (
 	"BlogServer/global"

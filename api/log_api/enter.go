@@ -1,8 +1,8 @@
 package log_api
 
 import (
-	"BlogServer/comment"
-	"BlogServer/comment/res"
+	"BlogServer/common"
+	"BlogServer/common/res"
 	"BlogServer/global"
 	"BlogServer/models"
 	"BlogServer/models/enum"
@@ -14,7 +14,7 @@ import (
 type LogApi struct{}
 
 type LogListRequest struct {
-	comment.PageInfo
+	common.PageInfo
 	LogType     enum.LogType      `form:"logType"` // 日志类型 1 2 3
 	Level       enum.LogLevelType `form:"level"`   // 日志级别 1 2 3
 	UserID      uint              `form:"userID"`
@@ -38,14 +38,14 @@ func (LogApi) LogListView(c *gin.Context) {
 		return
 	}
 
-	list, count, err := comment.ListQuery(models.LogModel{
+	list, count, err := common.ListQuery(models.LogModel{
 		LogType:     cr.LogType,
 		Level:       cr.Level,
 		UserID:      cr.UserID,
 		IP:          cr.IP,
 		LoginStatus: cr.LoginStatus,
 		ServiceName: cr.ServiceName,
-	}, comment.Options{
+	}, common.Options{
 		PageInfo:     cr.PageInfo,
 		Likes:        []string{"title"},
 		Preloads:     []string{"UserModel"},

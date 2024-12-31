@@ -1,7 +1,7 @@
 package site_api
 
 import (
-	"BlogServer/comment/res"
+	"BlogServer/common/res"
 	"BlogServer/conf"
 	"BlogServer/core"
 	"BlogServer/global"
