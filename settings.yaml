@@ -30,6 +30,15 @@ redis:
   addr: 192.168.5.129:6379
   password: ""
   db: 1
+upload:
+  size: 3
+  whiteList:
+    - jpg
+    - jpeg
+    - png
+    - webp
+    - gif
+  uploadDir: images01
 site:
   siteInfo:
     title: danta博客1

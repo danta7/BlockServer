@@ -8,3 +8,9 @@
 [2024-12-27 14:22:57] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
 [2024-12-27 14:27:02] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
 [2024-12-27 14:27:39] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2024-12-27 14:54:01] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2024-12-27 14:54:38] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2024-12-27 15:58:53] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2024-12-27 15:58:53] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2024-12-27 16:02:50] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2024-12-27 16:02:50] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功

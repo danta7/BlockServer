@@ -23,6 +23,7 @@ func flagDB() {
 		&models.LogModel{},
 		&models.UserLoginModel{},
 		&models.GlobalNotificationModel{}, // 全局通知
+		&models.ImageModel{},
 	)
 
 	if err != nil {

@@ -11,6 +11,6 @@ type ImageModel struct {
 	Hash     string `gorm:"size:32" json:"hash"`
 }
 
-func (m ImageModel) WebPath() string {
-	return fmt.Sprintf("/")
+func (i ImageModel) WebPath() string {
+	return fmt.Sprintf("/" + i.Path)
 }
