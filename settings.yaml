@@ -81,14 +81,15 @@ qq:
   appKey: ""
   redirect: http://xxxxxxxx
 qiNiu:
-  enable: false
-  accessKey: ""
-  secretKey: ""
-  bucket: ""
-  uri: ""
-  region: ""
-  prefix: ""
-  size: 0
+  enable: true
+  accessKey: yc0W3Q6mupl-PqEoj_z1xmq6ood700G0-3pdq3Uo
+  secretKey: J1Pu3J5Vo9prjykzOj3dfie_wjIsz1IsLQAWYKLx
+  bucket: dantablog
+  uri: http://spcsowzbl.hn-bkt.clouddn.com
+  region: z2
+  prefix: blogx
+  size: 3     # 图片大小限制
+  expiry: 60  # 上传token的过期时间
 ai:
   enable: false
   secretKey: njNJSDNKGNKSDNdmgsdoggs

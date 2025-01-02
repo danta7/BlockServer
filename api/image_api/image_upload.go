@@ -5,12 +5,11 @@ import (
 	"BlogServer/global"
 	"BlogServer/models"
 	"BlogServer/utlis"
+	file2 "BlogServer/utlis/file"
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 	"io"
-	"strings"
 )
 
 func (ImageApi) ImageUploadView(c *gin.Context) {
@@ -27,7 +26,7 @@ func (ImageApi) ImageUploadView(c *gin.Context) {
 	}
 	// 后缀判断
 	filename := fileHeader.Filename
-	suffix, err := imageSuffixJudge(filename)
+	suffix, err := file2.ImageSuffixJudge(filename)
 	if err != nil {
 		res.FailWithError(err, c)
 		return
@@ -74,18 +73,4 @@ func (ImageApi) ImageUploadView(c *gin.Context) {
 
 	c.SaveUploadedFile(fileHeader, filePath)
 	res.Ok(model.WebPath(), "文件上传成功", c)
-}
-
-func imageSuffixJudge(filename string) (suffix string, err error) {
-	_list := strings.Split(filename, ".")
-	if len(_list) == 1 {
-		err = errors.New("错误的文件名")
-		return
-	}
-	suffix = _list[len(_list)-1]
-	if !utlis.InList(suffix, global.Config.Upload.WhiteList) {
-		err = errors.New("文件非法")
-		return
-	}
-	return
 }

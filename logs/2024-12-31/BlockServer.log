@@ -27,3 +27,5 @@
 [2024-12-31 17:22:47] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
 [2024-12-31 17:22:47] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
 [2024-12-31 17:22:57] [33m[warning][0m image_model.go:27 BlogServer/models.ImageModel.BeforeDelete 删除文件失败 remove uploads/images01/7fd41aa0d82d1092632bf0151154e0c5.jpg: The system cannot find the file specified.
+[2024-12-31 19:00:47] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2024-12-31 19:00:47] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功

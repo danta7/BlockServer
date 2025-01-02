@@ -10,4 +10,5 @@ type QiNiu struct {
 	Region    string `json:"region" yaml:"region"`
 	Prefix    string `json:"prefix" yaml:"prefix"` // 上传的目录
 	Size      int    `json:"size" yaml:"size"`     // 大小限制 单位mb
+	Expiry    int    `json:"expiry" yaml:"expiry"` // token过期时间 s
 }
