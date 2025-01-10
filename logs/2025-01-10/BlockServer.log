@@ -1,0 +1,5 @@
+[2025-01-10 17:16:52] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2025-01-10 17:16:52] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2025-01-10 17:17:26] [36m[info][0m enter.go:74 BlogServer/flags/flag_user.FlagUser.Create 创建用户成功
+[2025-01-10 17:18:11] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2025-01-10 17:18:11] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功

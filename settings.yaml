@@ -30,15 +30,6 @@ redis:
   addr: 192.168.5.129:6379
   password: ""
   db: 1
-upload:
-  size: 3
-  whiteList:
-    - jpg
-    - jpeg
-    - png
-    - webp
-    - gif
-  uploadDir: images01
 site:
   siteInfo:
     title: danta博客1
@@ -61,7 +52,7 @@ site:
     github: ""
   login:
     qqLogin: false
-    usernamePwdLogin: false
+    usernamePwdLogin: true
     emailLogin: false
     captcha: false
   indexRight:
@@ -69,12 +60,12 @@ site:
   article:
     noExamine: true
 email:
-  domain: ""
-  port: 0
-  sendEmail: ""
-  authCode: ""
-  sendNickname: ""
-  ssl: false
+  domain: smtp.qq.com
+  port: 587
+  sendEmail: 1052323212@qq.com
+  authCode: kotzxppdzglxbeja
+  sendNickname: 蛋挞博客
+  ssl: true
   tls: false
 qq:
   appID: "123456789"
@@ -88,10 +79,19 @@ qiNiu:
   uri: http://spcsowzbl.hn-bkt.clouddn.com
   region: z2
   prefix: blogx
-  size: 3     # 图片大小限制
-  expiry: 60  # 上传token的过期时间
+  size: 3
+  expiry: 60
 ai:
   enable: false
   secretKey: njNJSDNKGNKSDNdmgsdoggs
   nickname: 蛋挞
   avatar: /xxx/xx
+upload:
+  size: 3
+  whiteList:
+  - jpg
+  - jpeg
+  - png
+  - webp
+  - gif
+  uploadDir: images01

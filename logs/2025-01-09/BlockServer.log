@@ -1,0 +1,7 @@
+[2025-01-09 17:50:49] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2025-01-09 17:50:49] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2025-01-09 18:26:59] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2025-01-09 18:26:59] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2025-01-09 18:28:36] [31m[error][0m captcha_middleware.go:32 BlogServer/middleware.CaptchaMiddleware 图形验证失败 EOF
+[2025-01-09 18:32:56] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2025-01-09 18:32:56] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
