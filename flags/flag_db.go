@@ -16,7 +16,7 @@ func flagDB() {
 		&models.CollectModel{},
 		&models.UserArticleCollectModel{},
 		&models.ImageModel{},
-		&models.UserTopArticleModel{},
+		&models.UserTopArticleModel{}, // 用户登录记录表
 		&models.UserArticleLookHistoryModel{},
 		&models.CommentModel{},
 		&models.BannerModel{},

@@ -4,6 +4,7 @@ import (
 	"BlogServer/common/res"
 	"BlogServer/global"
 	"BlogServer/models"
+	"BlogServer/service/user_service"
 	"BlogServer/utlis/jwts"
 	"BlogServer/utlis/pwd"
 	"github.com/gin-gonic/gin"
@@ -46,6 +47,9 @@ func (UserApi) PwdLoginApi(c *gin.Context) {
 		Username: user.Username,
 		Role:     user.Role,
 	})
+
+	// 记录登录日志
+	user_service.NewUserService(user).UserLogin(c)
 
 	res.OkWithData(token, c)
 

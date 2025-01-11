@@ -5,6 +5,7 @@ import (
 	"BlogServer/global"
 	"BlogServer/models"
 	"BlogServer/models/enum"
+	"BlogServer/service/user_service"
 	"BlogServer/utlis/email_store"
 	"BlogServer/utlis/jwts"
 	"BlogServer/utlis/pwd"
@@ -80,5 +81,8 @@ func (UserApi) RegisterEmailView(c *gin.Context) {
 		res.FailWithMsg("邮箱登录失败", c)
 		return
 	}
+
+	// 记录登录日志
+	user_service.NewUserService(user).UserLogin(c)
 	res.OkWithData(token, c)
 }

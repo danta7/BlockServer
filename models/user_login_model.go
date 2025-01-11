@@ -3,7 +3,7 @@ package models
 // UserLoginModel 用户登录表
 type UserLoginModel struct {
 	Model
-	UserID    uint64    `json:"userID"`
+	UserID    uint      `json:"userID"`
 	UserModel UserModel `gorm:"foreignKey:UserID" json:"-"`
 	IP        string    `gorm:"size:32" json:"ip"`
 	Addr      string    `gorm:"size:64" json:"addr"`
