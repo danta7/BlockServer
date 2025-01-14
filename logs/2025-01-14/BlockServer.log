@@ -1,0 +1,24 @@
+[2025-01-14 15:37:06] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2025-01-14 15:37:56] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2025-01-14 16:09:44] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2025-01-14 16:10:24] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2025-01-14 16:13:32] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2025-01-14 16:14:12] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2025-01-14 16:28:04] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2025-01-14 16:28:49] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2025-01-14 16:45:04] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2025-01-14 16:45:44] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2025-01-14 16:49:36] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2025-01-14 16:50:16] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2025-01-14 16:52:02] [31m[error][0m captcha_middleware.go:32 BlogServer/middleware.CaptchaMiddleware 图形验证失败 Key: 'CaptchaMiddlewareRequest.captchaId---CaptchaID' Error:Field validation for 'captchaId---CaptchaID' failed on the 'required' tag
+Key: 'CaptchaMiddlewareRequest.captchaCode---CaptchaCode' Error:Field validation for 'captchaCode---CaptchaCode' failed on the 'required' tag
+[2025-01-14 16:52:49] [31m[error][0m captcha_middleware.go:32 BlogServer/middleware.CaptchaMiddleware 图形验证失败 Key: 'CaptchaMiddlewareRequest.captchaId---CaptchaID' Error:Field validation for 'captchaId---CaptchaID' failed on the 'required' tag
+Key: 'CaptchaMiddlewareRequest.captchaCode---CaptchaCode' Error:Field validation for 'captchaCode---CaptchaCode' failed on the 'required' tag
+[2025-01-14 16:53:57] [31m[error][0m captcha_middleware.go:32 BlogServer/middleware.CaptchaMiddleware 图形验证失败 Key: 'CaptchaMiddlewareRequest.captchaId---CaptchaID' Error:Field validation for 'captchaId---CaptchaID' failed on the 'required' tag
+Key: 'CaptchaMiddlewareRequest.captchaCode---CaptchaCode' Error:Field validation for 'captchaCode---CaptchaCode' failed on the 'required' tag
+[2025-01-14 16:55:10] [31m[error][0m captcha_middleware.go:32 BlogServer/middleware.CaptchaMiddleware 图形验证失败 Key: 'CaptchaMiddlewareRequest.captchaId---CaptchaID' Error:Field validation for 'captchaId---CaptchaID' failed on the 'required' tag
+Key: 'CaptchaMiddlewareRequest.captchaCode---CaptchaCode' Error:Field validation for 'captchaCode---CaptchaCode' failed on the 'required' tag
+[2025-01-14 16:55:41] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2025-01-14 16:56:21] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2025-01-14 16:56:30] [31m[error][0m captcha_middleware.go:32 BlogServer/middleware.CaptchaMiddleware 图形验证失败 Key: 'CaptchaMiddlewareRequest.captchaId---CaptchaID' Error:Field validation for 'captchaId---CaptchaID' failed on the 'required' tag
+Key: 'CaptchaMiddlewareRequest.captchaCode---CaptchaCode' Error:Field validation for 'captchaCode---CaptchaCode' failed on the 'required' tag
