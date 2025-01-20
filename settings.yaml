@@ -54,7 +54,7 @@ site:
     qqLogin: false
     usernamePwdLogin: true
     emailLogin: true
-    captcha: true
+    captcha: false
   indexRight:
     list: []
   article:
