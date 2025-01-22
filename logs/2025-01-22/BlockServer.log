@@ -1,0 +1,9 @@
+[2025-01-22 17:44:01] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2025-01-22 17:44:01] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2025-01-22 18:56:03] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2025-01-22 18:56:03] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2025-01-22 19:00:31] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2025-01-22 19:00:31] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
+[2025-01-22 19:00:31] [36m[info][0m flag_db.go:34 BlogServer/flags.flagDB 数据库迁移成功！
+[2025-01-22 19:13:41] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2025-01-22 19:13:41] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功
