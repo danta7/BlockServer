@@ -1,0 +1,2 @@
+[2025-01-27 10:31:14] [36m[info][0m init_db.go:28 BlogServer/core.InitDB mysql数据库连接成功!
+[2025-01-27 10:31:14] [36m[info][0m init_redis.go:21 BlogServer/core.InitRedis redis连接成功

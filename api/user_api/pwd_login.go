@@ -3,6 +3,7 @@ package user_api
 import (
 	"BlogServer/common/res"
 	"BlogServer/global"
+	"BlogServer/middleware"
 	"BlogServer/models"
 	"BlogServer/service/user_service"
 	"BlogServer/utlis/jwts"
@@ -16,12 +17,7 @@ type PwdLoginRequest struct {
 }
 
 func (UserApi) PwdLoginApi(c *gin.Context) {
-	var cr PwdLoginRequest
-	err := c.ShouldBindJSON(&cr)
-	if err != nil {
-		res.FailWithError(err, c)
-		return
-	}
+	cr := middleware.GetBind[PwdLoginRequest](c)
 
 	if !global.Config.Site.Login.UsernamePwdLogin {
 		res.FailWithMsg("站点未启动密码登录", c)
@@ -29,7 +25,7 @@ func (UserApi) PwdLoginApi(c *gin.Context) {
 	}
 
 	var user models.UserModel
-	err = global.DB.Take(&user, "(username = ? or email = ?) and password <> ''",
+	err := global.DB.Take(&user, "(username = ? or email = ?) and password <> ''",
 		cr.Val, cr.Val).Error
 
 	if err != nil {

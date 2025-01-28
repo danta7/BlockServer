@@ -11,6 +11,7 @@ import (
 
 type AdminUserInfoUpdateRequest struct {
 	UserID   uint           `json:"userID" binding:"required"`
+	Username *string        `json:"username" s-u:"username"`
 	Nickname *string        `json:"nickname" s-u:"nickname"`
 	Avatar   *string        `json:"avatar" s-u:"avatar"` // 头像
 	Abstract *string        `json:"abstract" s-u:"abstract"`
